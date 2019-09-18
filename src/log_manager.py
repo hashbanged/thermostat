@@ -16,7 +16,7 @@ def setup_logging(logger_name):
 
     handler = logging.handlers.TimedRotatingFileHandler(
         log_file, 
-        when="D", 
+        when="midnight", 
         interval=1, 
         backupCount=60
     )
